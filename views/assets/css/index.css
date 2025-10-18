@@ -261,3 +261,205 @@
         order: 1;
     }
 }
+
+/* Contacto */
+.contact{
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
+}
+
+
+/* Alexia */
+/* Contacto */
+
+.page-container {
+   display: flex;
+   padding: 50px;
+    flex-direction: column; /* Apila las secciones verticalmente */
+    align-items: center; /* Centra el contenido */
+    width: 100%;
+    font-family: 'Inter', sans-serif; /* Establece la fuente solo para este contenedor y sus hijos */ /* Establece el fondo gris solo para el área de este contenedor */
+    padding-bottom: 40px; /* Opcional: añade espacio interno abajo */
+   
+
+}
+
+
+.top-section-container {
+    width: 100%;
+    max-width: 1212px;
+    display: flex; 
+    gap: 20px; /* Espacio entre las dos tarjetas */
+    margin-bottom: 20px; /* Espacio entre la sección superior y el formulario */
+}
+
+
+.info-column {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blanco);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-column  {
+    flex: 1; 
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    min-height: 550px; 
+}
+
+.map-column iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block; 
+}
+
+.contact-form-card {
+    width: 100%;
+    max-width: 1212px; /* Mismo ancho que la sección superior */
+    background-color: var(--blanco);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--marron-oscuro);
+    margin-bottom: 30px; /* Espacio debajo del título del formulario */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form-card input[type="text"],
+.contact-form-card input[type="email"],
+.contact-form-card textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--marron-oscuro);
+    border-radius: 8px; /* Bordes redondeados para los campos */
+    font-size: 16px;
+    background: #f8f9fa; /* Fondo ligeramente gris para los campos */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form-card input[type="text"]:focus,
+.contact-form-card input[type="email"]:focus,
+.contact-form-card textarea:focus {
+    border-color: var(--marron-suave); /* Color de acento al enfocar */
+    outline: none; /* Eliminar el contorno predeterminado del navegador */
+}
+
+.contact-form-card textarea {
+    resize: vertical;
+    min-height: 120px; /* Altura mínima para el textarea */
+}
+
+
+.submit-btn {
+    background-color:var(--marron-medio); /* Color de acento para el botón */
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px; /* Botón tipo "píldora" */
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color:var(--marron-suave) ; 
+}
+
+.info-column h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--marron-oscuro);
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--marron-suave);
+    margin-top: 8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+.social-link {
+    width: 56px;
+    height: 56px;
+    background-color: var(--crema-claro);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.social-link i {
+    font-size: 28px;
+    color: var(--marron-medio);
+    transition: color 0.3s ease;
+}
+
+.social-link.facebook:hover { background-color: #1877F2; }
+.social-link.instagram:hover { background-color: #E4405F; }
+.social-link.x-logo:hover { background-color: #000000; }
+.social-link:hover i { color: #ffffff; }
+
+.divider {
+    border: none;
+    border-top: 1px solid #dddfe2;
+    margin-bottom: 24px;
+}
+
+
+.contact-details-container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    text-align: left;
+    gap: 24px; /* Espacio vertical entre los bloques */
+}
+
+.info-title { 
+    display: flex; 
+     
+    margin-bottom: 8px; 
+}
+
+.info-title i { 
+    font-size: 24px; 
+    color: var(--marron-medio); 
+    margin-right: 8px; 
+}
+
+.info-title h2 { 
+    font-size: 20px; 
+    font-weight: 700; 
+    color: var(--marron-oscuro); 
+}
+
+.info-text { 
+    font-size: 15px; 
+    color: var(--marron-suave); 
+    line-height: 1.5; 
+}

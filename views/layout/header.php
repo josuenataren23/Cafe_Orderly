@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href=".\views\assets\icons\Logo.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4e117fba32.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="./views/assets/css/style.css">
@@ -40,7 +41,7 @@
         <nav class="navbar" id="navbar">
             <a href="index.php?controller=home&action=index">INICIO</a>
             <a href="index.php?controller=home&action=index#nosotros">NOSOTROS</a>
-            <a href="">CONTACTO</a>
+            <a href="index.php?controller=home&actionindex#contact">CONTACTO</a>
             <a href="index.php?controller=home&action=menu">MENU</a>
             <a href="index.php?controller=home&action=reservar">RESERVAR</a>
         </nav>

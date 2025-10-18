@@ -79,7 +79,75 @@
             </div>
         </div>
     </section>
-    <section class="contact">
-        <h3>Contacto</h3>
-        <div class="hr"></div>
+    <section id="contact" class="contact animate-fade-in">
+        <h3 class="text-center">Contacto</h3>
+        <div class="hr"></div>}
+        <div class="page-container">
+        
+        <div class="top-section-container">
+            
+            <div class="info-column">
+                <h1>Ponte en Contacto</h1>
+                <p class="subtitle">¡Nos encantaría saber de ti! Síguenos en nuestras redes o visítanos.</p>
+                <div class="social-icons">
+                    <a href="" class="social-link facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="social-link instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="social-link x-logo"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                
+                <hr class="divider">
+                <div class="contact-details-container">
+                    <div class="location-info">
+                        <div class="info-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                            <h2>Nuestra Ubicación</h2>
+                        </div>
+                        <p class="info-text">
+                            Parque de la Marimba, Av. Central Pte. s/n,
+                            <br>
+                            Tuxtla Gutiérrez, Chiapas, 29000, México.
+                        </p>
+                    </div>
+                    <div class="phone-info">
+                        <div class="info-title">
+                        <i class="fa-solid fa-phone"></i>
+                            <h2>Llámenos</h2>
+                        </div>
+                        <p class="info-text">
+                            +52 (961) 123-4567
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-column">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281.647626264295!2d-93.16390499441252!3d16.756170293483798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0f81db4a828b%3A0x5fbb981a59c293e7!2sUniversidad%20Aut%C3%B3noma%20de%20Chiapas!5e0!3m2!1ses-419!2smx!4v1760726713186!5m2!1ses-419!2smx"
+                        width="100px" height="100px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <div class="contact-form-card">
+            <h2>Contáctenos</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Enter a valid email address" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Escriba su mensaje" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">ENVIAR</button>
+            </form>
+        </div>
+
+    </div>
+
+        
     </section>
+
+    
