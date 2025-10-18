@@ -81,7 +81,7 @@
     </section>
     <section id="contact" class="contact animate-fade-in">
         <h3 class="text-center">Contacto</h3>
-        <div class="hr"></div>}
+        <div class="hr"></div>
         <div class="page-container">
         
         <div class="top-section-container">
@@ -131,7 +131,7 @@
 
         <div class="contact-form-card">
             <h2>Contáctenos</h2>
-            <form action="#" method="POST">
+            <form action="https://formsubmit.co/fb46786baa34c7e9c72e2ed56fe55d44" method="POST">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Enter your Name" required>
                 </div>
