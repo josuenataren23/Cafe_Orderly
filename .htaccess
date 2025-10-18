@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /Cafe_Orderly/
+
+    # Si la solicitud no es un archivo ni una carpeta física
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirige todas las solicitudes a index.php
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>

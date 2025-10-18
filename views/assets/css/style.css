@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--fondo-secundario);
+}
+
+:root {
+/* Colores principales */
+  --marron-oscuro: rgba(75, 43, 23, 1);   
+  --marron-medio: rgba(106, 58, 30, 1);   
+  --beige-claro: rgba(244, 217, 167, 1);  
+  --naranja-cafe: rgba(212, 106, 51, 1);  
+  --marron-suave: rgba(185, 122, 86, 1);  
+  --crema-claro: rgba(247, 227, 195, 1);  
+  --blanco: rgba(255, 255, 255, 1);       
+  --negro: rgba(43, 27, 15, 1);           
+
+/* Colores secundarios (neutros y grises) */
+  --gris-claro: rgba(240, 240, 240, 1);
+  --gris-medio: rgba(180, 180, 180, 1);
+  --gris-oscuro: rgba(100, 100, 100, 1);
+  --gris-suave: rgba(220, 220, 220, 1);
+  --gris-texto: rgba(80, 80, 80, 1);
+
+  /* Colores de acento y utilidad */
+  --sombra: rgba(0, 0, 0, 0.15);
+  --borde: rgba(75, 43, 23, 0.4);
+  --resalte: rgba(255, 179, 71, 1);  
+  --fondo-secundario: rgba(250, 242, 230, 1);
+}
+
+/* Barra de Navegacion */
+.header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blanco);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.txt-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+    position: relative;
+    top: 10%;
+}
+.txt-title h1{
+    color: var(--marron-medio);
+}
+.txt-title p{
+    color: var(--gris-texto);
+}
+.title{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    
+}
+.title img{
+    height: 2rem;
+    position: relative;
+    left: .5rem;
+    top: .1rem;
+}
+.logo .logo-img{
+    height: 10vh;
+    border-radius: 50%;
+}
+.navbar{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all,.3s;
+}
+.navbar a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--marron-medio);
+    font-size: 1.2rem;
+}
+.navbar a:hover{
+    color: var(--marron-suave);
+}
+.navbar a:nth-child(5){
+    padding: 2%;
+    background-color: var(--marron-oscuro);
+    color: var(--gris-claro);
+    border-radius: 10px;
+}
+.navbar a:nth-child(5):hover{
+    background-color: var(--marron-medio);
+    color: var(--blanco);
+}
+#check{
+    display: none;
+}
+.icons{
+    position: absolute;
+    font-size: 2.8rem;
+    color: var(--marron-oscuro);
+    cursor: pointer;
+    display: none;
+}
+
+#barra{
+    position: fixed;
+    left: 0;
+    top: 14.1vh;
+    height: 1vh;
+    z-index: 100;
+    width: 0%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(90deg,var(--marron-suave),var(--marron-oscuro));
+    z-index: 10000;
+}
+
+@media screen and (max-width:768px){
+    /* .header{
+        height: 10vh;
+    } */
+    .icons{
+        display: inline-flex;
+        right: 5%;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        flex-direction: column;
+        top: 15vh;
+        padding: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: var(--beige-claro);
+        backdrop-filter: blur(50px);
+        overflow: hidden;
+        transition: all,.3s;
+    }
+    #check:checked~.navbar{
+        height: auto;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: all, .3s;
+        opacity: 0;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+}
+
+
+/* Animaciones */
+@keyframes slide-in-bottom{
+  0%{
+    transform: translateY(20px)
+  }
+
+  100%{
+    transform: translateY(0)
+  }
+}
+
+.animate-slide-in-bottom{
+  animation: slide-in-bottom 0.6s ease-out both
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0
+  }
+
+  100%{
+    opacity: 1
+  }
+}
+
+.animate-fade-in{
+  animation: fade-in 0.6s ease-in both
+}
+
+
