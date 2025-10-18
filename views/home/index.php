@@ -79,3 +79,7 @@
             </div>
         </div>
     </section>
+    <section class="contact">
+        <h3>Contacto</h3>
+        <div class="hr"></div>
+    </section>
