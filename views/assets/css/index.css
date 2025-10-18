@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 5% 10%;
-    margin: 15vh 0 10vh 0;
+    margin-top: 15vh;
     background: url(../img/elemento2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,7 +68,7 @@
 }
 .card-banner{
     width: 100%;
-    height: fit-content;
+    height: auto;
     background-color: var(--fondo-secundario);
     padding: .9rem .7rem;
     display: flex;
@@ -91,6 +91,7 @@
 
 .banner .previs-banner{
     width: 100%;
+    height: auto;
     z-index: 1;
 }
 /* Tarjeta del carrusel */
@@ -200,73 +201,12 @@
 .div5 {
     grid-row-start: 2;
 }
-/* Responsive */
-@media (max-width: 768px) {
-    /* Banner */
-    .banner{
-        height: auto;
-        grid-template-columns: repeat(1,1fr);
-        padding: 5% 5%;
-        margin-bottom: 0;
-    }
-    .banner::before{
-        height: auto;
-    }
-    .banner .desc-banner{
-        width: 100%;
-        gap: 1rem;
-    }
-    .previs-banner{
-        display: none;
-    }
-    .banner .conten-cards-banner{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 1rem;
-    }
-    .card-banner{
-        width: 100%;
-        height: fit-content;
-        
-    }
-    /* Nosotros */
-    .nosotros{
-        padding: 15vh 5% 0 5%;
-    }
-    .conten-nosotros{
-        
-        grid-template-columns: 1fr;
-        
-    }
-    /* Galleria */
-    .parent {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
-    .div1, .div2, .div3, .div4, .div5 {
-        grid-column: auto;
-        grid-row: auto;
-    }
-    .div1{
-        display: none;
-    }
-    .pic-gallery{
-        height: 30vh;
-    }
-    .div2{
-        order: 2;
-    }
-    .div3{
-        order: 1;
-    }
-}
 
 /* Contacto */
 .contact{
     width: 100%;
     height: auto;
-    margin-top: 15vh;
+    padding-top: 15vh;
 }
 
 
@@ -275,10 +215,11 @@
 
 .page-container {
    display: flex;
-   padding: 50px;
     flex-direction: column; /* Apila las secciones verticalmente */
     align-items: center; /* Centra el contenido */
     width: 100%;
+    height: auto;
+    margin-top: 4vh;
     font-family: 'Inter', sans-serif; /* Establece la fuente solo para este contenedor y sus hijos */ /* Establece el fondo gris solo para el área de este contenedor */
     padding-bottom: 40px; /* Opcional: añade espacio interno abajo */
    
@@ -297,7 +238,7 @@
 
 .info-column {
     flex: 1;
-    padding: 40px;
+    padding: 10%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -462,4 +403,75 @@
     font-size: 15px; 
     color: var(--marron-suave); 
     line-height: 1.5; 
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Banner */
+    .banner{
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        padding: 5% 5%;
+        margin-bottom: 0;
+    }
+    .banner::before{
+        height: auto;
+    }
+    .banner .desc-banner{
+        width: 100%;
+        gap: 1rem;
+    }
+    .previs-banner{
+        display: none;
+    }
+    .banner .conten-cards-banner{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    }
+    .card-banner{
+        width: 100%;
+        height: fit-content;
+        
+    }
+    /* Nosotros */
+    .nosotros{
+        padding: 15vh 5% 0 5%;
+    }
+    .conten-nosotros{
+        
+        grid-template-columns: 1fr;
+        
+    }
+    /* Galleria */
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .div1, .div2, .div3, .div4, .div5 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .div1{
+        display: none;
+    }
+    .pic-gallery{
+        height: 30vh;
+    }
+    .div2{
+        order: 2;
+    }
+    .div3{
+        order: 1;
+    }
+
+    /* Contacto */
+    .contact{
+        padding: 5%;
+    }
+    .map-column{
+        display: none;
+    }
 }
