@@ -1,0 +1,130 @@
+.banner{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+    left: 0;
+    top: 15vh;
+    padding: 1% 10%;
+    background: url(../img/banner-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15vh;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    left: 0;
+    top: 0; 
+    z-index: 0;
+    background: rgba(24,24,24,0.5);
+    backdrop-filter: blur(2px);
+}
+.banner .conten-text-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--resalte);
+    font-family:fantasy, sans-serif;
+}
+.banner .conten-text-banner h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 0px 3px var(--resalte));
+    letter-spacing: .2rem;
+}
+.banner .conten-text-banner p{
+    font-size: 1.2rem;
+}
+.conten-cards-banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.card-menu-banner{
+    width: 100%;
+    height: auto;
+    background: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 1rem;
+    gap: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-menu-banner .conten-img-card-banner{
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+    background-size: cover;
+}
+.conten-img-card-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;  
+    object-position: center; 
+    display: block;
+    border-radius: 10px;
+}   
+.btn-vermenu{
+    padding: .8rem 2rem;
+    background: var(--resalte);
+    color: var(--blanco);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+.btn-vermenu:hover{
+    background: rgb(209, 147, 0);
+    transform: scale(1.05);
+}
+
+.flecha-abajo {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vh;
+    color: var(--resalte);
+    filter: drop-shadow(0px 0px 3px var(--resalte));
+    animation: pulse 1.5s infinite;
+    
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: .8;
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: .8;
+    }
+}
+
+/* responsivo */
+@media screen and (max-width:768px){
+    .conten-cards-banner{
+        display: none;
+    }
+    .conten-text-banner h1{
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    
+}
