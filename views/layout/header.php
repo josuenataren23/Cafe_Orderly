@@ -9,20 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="./views/assets/css/style.css">
-
     <?php
     // Define una ruta CSS por defecto si la variable no está establecida
     $default_css = './views/assets/css/style.css';
     // Usa el CSS específico si existe y no está vacío, si no, usa el por defecto
     $css_to_load = (isset($css_file) && !empty($css_file)) ? $css_file : $default_css;
     ?>
-
     <link rel="stylesheet" href="<?php echo htmlspecialchars($css_to_load, ENT_QUOTES, 'UTF-8'); ?>">
     <title>Nala Coffee</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="navbar">
         <div class="logo">
             <img src="./views/assets/img/Logo.png" alt="Logo" class="logo-img">
             <div class="txt-title">

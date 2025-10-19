@@ -79,6 +79,7 @@
             </div>
         </div>
     </section>
+
     <section id="contact" class="contact animate-fade-in">
         <h3 class="text-center">Contacto</h3>
         <div class="hr"></div>
@@ -123,7 +124,7 @@
             <div class="map-column">
                 <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281.647626264295!2d-93.16390499441252!3d16.756170293483798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0f81db4a828b%3A0x5fbb981a59c293e7!2sUniversidad%20Aut%C3%B3noma%20de%20Chiapas!5e0!3m2!1ses-419!2smx!4v1760726713186!5m2!1ses-419!2smx"
-                        width="100px" height="100px" style="border:0;" allowfullscreen="" loading="lazy"
+                        style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 

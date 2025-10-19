@@ -47,6 +47,9 @@ body{
     top: 0;
     z-index: 1000;
 }
+#navbar{
+    transition: ease .3s;
+}
 .logo{
     width: 30%;
     height: 15vh;
