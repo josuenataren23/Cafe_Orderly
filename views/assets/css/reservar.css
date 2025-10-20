@@ -1,0 +1,76 @@
+.banner{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    left: 0;
+    top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    color: var(--blanco);
+    background-image: url(../img/banner-reservar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+.banner h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: fantasy, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    filter: drop-shadow(0px 0px 3px var(--sombra));
+    font-size: 4rem;
+}
+.banner .btn-login{
+    margin-top: 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    background-color: var(--marron-suave);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.banner .btn-login:hover{
+    background-color: var(--marron-medio);
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    left: 0;
+    top: 0; 
+    z-index: -1;
+    background: rgba(24,24,24,0.6);
+    backdrop-filter: blur(5px);
+}
+.info-login{
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.8);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(.8);
+        opacity: 1;
+    }
+    
+}
