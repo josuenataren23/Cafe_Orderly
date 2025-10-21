@@ -40,8 +40,8 @@
             <a href="index.php?controller=home&action=index">INICIO</a>
             <a href="index.php?controller=home&action=index#nosotros">NOSOTROS</a>
             <a href="index.php?controller=home&actionindex#contact">CONTACTO</a>
-            <a href="index.php?controller=home&action=menu">MENU</a>
-            <a href="index.php?controller=home&action=reservar">RESERVAR</a>
+            <a href="index.php?controller=menu&action=menu">MENU</a>
+            <a href="index.php?controller=reservar&action=reservar">RESERVAR</a>
         </nav>
     </header>
 
