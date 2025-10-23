@@ -66,7 +66,7 @@ Desarrollado bajo la **arquitectura MVC**, combina **PHP**, **HTML**, **CSS**, *
         </tr>
         <tr>
             <td align="center">
-                <a href="https://github.com/josuenataren23" style="text-decoration: none; color: inherit; font-size: 0.9em;">YSY</a>
+                <a href="https://github.com/josuenataren23" style="text-decoration: none; color: inherit; font-size: 0.9em;">JosueDS3</a>
             </td>
             <td align="center">
                 <a href="https://github.com/alexiacas123-svg" style="text-decoration: none; color: inherit; font-size: 0.9em;">alexiacas123</a>
@@ -84,5 +84,5 @@ Desarrollado bajo la **arquitectura MVC**, combina **PHP**, **HTML**, **CSS**, *
 ---
 
 <p align="center">
-  <b>© 2025 Café Orderly — Simplificando la gestión de tu cafetería ☕</b>
+  <b>© 2025 Cafe Orderly — Simplificando la gestión de tu cafetería ☕</b>
 </p>
