@@ -122,6 +122,11 @@ body{
     cursor: pointer;
     display: none;
 }
+/* Users */
+.profile{
+    z-index: 1000;
+}
+
 
 #barra{
     position: fixed;

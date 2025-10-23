@@ -44,7 +44,12 @@
             <a href="index.php?controller=reservar&action=reservar">RESERVAR</a>
         </nav>
     </header>
-
+    <div class="profile">
+        <input type="checkbox" id="check-user">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-circle-user"></i>
+        </label>
+    </div>
     <div id="barra"></div>
 
 
