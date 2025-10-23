@@ -122,12 +122,50 @@ body{
     cursor: pointer;
     display: none;
 }
-/* Users */
-.profile{
-    z-index: 1000;
+#check-user {
+  display: none;
+}
+
+.profile {
+  position: absolute;
+  width: auto;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5%;
+  top: 0;
+  z-index: 1000;
+}
+
+.icons-user {
+  font-size: 2rem;
+  color: var(--marron-oscuro);
+  cursor: pointer;
+}
+
+.conten-user {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--blanco);
+  position: absolute;
+  top: 16vh;
+  right: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* ✅ El truco */
+#check-user:checked ~ .conten-user {
+  display: flex;
 }
 
 
+/* Barra de progreso */
 #barra{
     position: fixed;
     left: 0;
@@ -187,6 +225,9 @@ body{
         transform: translateY(0);
         opacity: 1;
         transition-delay: calc(.15s * var(--i));
+    }
+    .profile{
+        display: none;
     }
 }
 

@@ -43,13 +43,21 @@
             <a href="index.php?controller=menu&action=menu">MENU</a>
             <a href="index.php?controller=reservar&action=reservar">RESERVAR</a>
         </nav>
+        <div class="profile">
+  <input type="checkbox" id="check-user">
+  <label for="check-user" class="icons-user">
+    <i class="fa-solid fa-circle-user"></i>
+  </label>
+
+  <div class="conten-user">
+    
+    <p>Perfil</p>
+    <a href="#">Iniciar sesion</a>
+  </div>
+</div>
     </header>
-    <div class="profile">
-        <input type="checkbox" id="check-user">
-        <label for="check" class="icons">
-            <i class="fa-solid fa-circle-user"></i>
-        </label>
-    </div>
+    
+
     <div id="barra"></div>
 
 
