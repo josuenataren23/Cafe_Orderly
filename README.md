@@ -45,37 +45,37 @@ Desarrollado bajo la **arquitectura MVC**, combina **PHP**, **HTML**, **CSS**, *
         <tr>
             <td align="center" style="border: none; padding: 10px;">
                 <a href="https://github.com/josuenataren23" target="_blank">
-                    <img src="https://avatars.githubusercontent.com/u/152847444?v=4" width="70px" style="border-radius:50%;" alt="Josue Nataren">
+                    <img src="https://avatars.githubusercontent.com/u/226804626?s=96&v=4" width="70px" style="border-radius:50%;" alt="Josue">
                 </a>
             </td>
             <td align="center" style="border: none; padding: 10px;">
                 <a href="https://github.com/alexiacas123-svg" target="_blank">
-                    <img src="https://avatars.githubusercontent.com/u/153836719?v=4" width="70px" style="border-radius:50%;" alt="Alexia Cas">
+                    <img src="https://avatars.githubusercontent.com/u/226804654?s=64&v=4" width="70px" style="border-radius:50%;" alt="Alexia">
                 </a>
             </td>
             <td align="center" style="border: none; padding: 10px;">
                 <a href="https://github.com/Dkimiko" target="_blank">
-                    <img src="https://avatars.githubusercontent.com/u/153837202?v=4" width="70px" style="border-radius:50%;" alt="Dkimiko">
+                    <img src="https://avatars.githubusercontent.com/u/225469324?s=64&v=4" width="70px" style="border-radius:50%;" alt="Dkimiko">
                 </a>
             </td>
             <td align="center" style="border: none; padding: 10px;">
                 <a href="https://github.com/Ender524-progr" target="_blank">
-                    <img src="https://avatars.githubusercontent.com/u/153837042?v=4" width="70px" style="border-radius:50%;" alt="Ender524">
+                    <img src="https://avatars.githubusercontent.com/u/226804803?s=64&v=4" width="70px" style="border-radius:50%;" alt="Ender524">
                 </a>
             </td>
         </tr>
         <tr>
-            <td align="center" style="border: none; padding-top: 5px;">
-                <a href="https://github.com/josuenataren23" style="text-decoration: none; color: inherit; font-size: 0.9em;">Josue Nataren</a>
+            <td align="center">
+                <a href="https://github.com/josuenataren23" style="text-decoration: none; color: inherit; font-size: 0.9em;">YSY</a>
             </td>
-            <td align="center" style="border: none; padding-top: 5px;">
-                <a href="https://github.com/alexiacas123-svg" style="text-decoration: none; color: inherit; font-size: 0.9em;">Alexia Cas</a>
+            <td align="center">
+                <a href="https://github.com/alexiacas123-svg" style="text-decoration: none; color: inherit; font-size: 0.9em;">alexiacas123</a>
             </td>
-            <td align="center" style="border: none; padding-top: 5px;">
-                <a href="https://github.com/Dkimiko" style="text-decoration: none; color: inherit; font-size: 0.9em;">Dkimiko</a>
+            <td align="center">
+                <a href="https://github.com/Dkimiko" style="text-decoration: none; color: inherit; font-size: 0.9em;">Cesar</a>
             </td>
-            <td align="center" style="border: none; padding-top: 5px;">
-                <a href="https://github.com/Ender524-progr" style="text-decoration: none; color: inherit; font-size: 0.9em;">Ender524</a>
+            <td align="center">
+                <a href="https://github.com/Ender524-progr" style="text-decoration: none; color: inherit; font-size: 0.9em;">Alonso</a>
             </td>
         </tr>
     </table>
