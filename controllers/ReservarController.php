@@ -10,13 +10,5 @@ class ReservarController
         require_once 'views/layout/footer.php';
     }
     
-    public function login()
-    {
-        $css_file = '.\views\assets\css\login.css'; // Specify CSS file for reservar page
-        // Load the reservar view
-        require_once 'views/layout/header.php';
-        require_once 'views/Reservas/login.php';
-        require_once 'views/layout/footer.php';
-    }
 }
 ?>
