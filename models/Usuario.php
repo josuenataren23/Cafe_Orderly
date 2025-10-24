@@ -7,7 +7,7 @@ class Usuario {
         $this->db = $conn;
     }
 
-    // 🔹 Buscar usuario por correo
+    //  Buscar usuario por correo
     public function obtenerPorCorreo($correo) {
         $query = "SELECT * FROM Usuarios WHERE Email = :correo";
         $stmt = $this->db->prepare($query);
@@ -16,7 +16,7 @@ class Usuario {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    // 🔹 Registrar nuevo usuario
+    //  Registrar nuevo usuario
     public function registrarUsuario($usuario, $correo, $contrasena, $rol = 4) {
         $hash = password_hash($contrasena, PASSWORD_BCRYPT);
 

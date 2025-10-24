@@ -50,7 +50,7 @@
         <h3>Nosotros</h3>
         <div class="hr"></div>
         <div class="conten-nosotros ">
-            <div class="card-banner">
+            <div class="card-banner bg-white">
                 <h3>Mision</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Dicta provident consequuntur dolorum nulla
@@ -58,7 +58,7 @@
                     ipsa distinctio, sapiente aliquam delectus, excepturi,
                     tenetur quisquam?</p>
             </div>
-            <div class="card-banner">
+            <div class="card-banner bg-white">
                 <h3>Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Blanditiis beatae ad modi voluptate

@@ -1,3 +1,9 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,17 +54,23 @@
   <label for="check-user" class="icons-user">
     <i class="fa-solid fa-circle-user"></i>
   </label>
+ 
 
-  <div class="conten-user">
-    
-    <p>Perfil</p>
-    <a href="#">Iniciar sesion</a>
-  </div>
+  <!-- Modicar Esto -->
+
+<div class="conten-user">
+    <p>Perfil<?php if (isset($_SESSION['usuario'])) echo ' — ' . htmlspecialchars($_SESSION['usuario']); ?></p>
+
+    <?php if (isset($_SESSION['usuario'])): ?>
+        <a href="?controller=Auth&action=logout">Cerrar sesión</a>
+    <?php else: ?>
+        <a href="?controller=Auth&action=login">Iniciar sesión</a>
+    <?php endif; ?>
 </div>
-    </header>
-    
+</div>
+</header>
 
-    <div id="barra"></div>
+<div id="barra"></div>
 
 
 

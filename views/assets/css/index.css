@@ -179,6 +179,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
 .pic-gallery img {
     width: 100%;
@@ -186,7 +188,11 @@
     object-fit: cover;  
     object-position: center; 
     display: block;
-    border-radius: 10px;
+    border-radius: 0;
+    transition: all .6s;
+}
+.pic-gallery img:hover{
+    transform: scale(1.1);
 }   
 .div1 {
     grid-column: span 2 / span 2;
