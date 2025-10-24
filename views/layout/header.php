@@ -11,9 +11,11 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href=".\views\assets\icons\Logo.svg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/4e117fba32.js" crossorigin="anonymous"></script>
+    <script src= ''></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Incluye el script de Turnstile una sola vez -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
         <link rel="stylesheet" href="./views/assets/css/style.css">
     <?php
     // Define una ruta CSS por defecto si la variable no está establecida
