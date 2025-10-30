@@ -19,7 +19,7 @@ class DashboardController {
         }
 
         // 3️⃣ Si pasa las validaciones, mostrar el dashboard
-        require 'DashBoardAdmin/views/layout/index.php';
+        require 'DashBoardAdmin/index.php';
     }
 }
 ?>
