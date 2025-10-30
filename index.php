@@ -1,6 +1,8 @@
 <?php
 // index.php — Enrutador principal
 
+require_once 'vendor/autoload.php';
+
 // Obtiene el controlador y la acción desde la URL, con valores por defecto
 $controller = isset($_GET['controller']) ? $_GET['controller'] : 'home';
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
