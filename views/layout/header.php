@@ -10,6 +10,8 @@ if (session_status() === PHP_SESSION_NONE) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="400097942545-kptqbpotiakcv7kgd4een3e8m24q3d06.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <link rel="shortcut icon" href=".\views\assets\icons\Logo.svg" type="image/x-icon">
     <script src= ''></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -34,7 +36,7 @@ if (session_status() === PHP_SESSION_NONE) {
             <div class="txt-title">
                 <div class="title">
                     <h1>NalaCoffee</h1>
-                    <img src="img/grano.jpg" alt>
+                    <img src="views\assets\img\grano.jpg" alt>
                 </div>
                 <p>Restaurante - Cafe</p>
             </div>

@@ -9,7 +9,7 @@
                         los dias</b> de 8:00 a 20:00.
                 </p>
             </div>
-            <a href="#">Reserva Ahora</a>
+            <a href="?controller=reservar&action=reservar">Reserva Ahora</a>
             <div class="conten-cards-banner">
                 <div class="card-banner">
                     <h3>Recomendación del día</h3>

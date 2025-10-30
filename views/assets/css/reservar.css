@@ -74,3 +74,230 @@
     }
     
 }
+
+
+/* seccion de reservas */
+/* --- Contenedor Principal --- */
+.conten-reservar {
+    width: 100%;
+    max-width: 680px; /* Ancho similar al de la imagen */
+    margin: 0 auto;
+    padding-top: 15vh;
+}
+
+.reserva-container-modern {
+    background-color: #ffffff;
+    border: 1px solid #d8d9db;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Título --- */
+.reserva-container-modern h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2d333f;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Indicador de Pasos --- */
+.steps-indicator {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.steps-indicator span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.steps-indicator strong {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.steps-indicator .step-active {
+    color: #2d333f;
+    font-weight: 600;
+}
+
+.steps-indicator .step-active strong {
+    background-color: #da3743; /* Rojo OpenTable */
+    color: #ffffff;
+}
+
+.steps-indicator .step-inactive {
+    color: #6f737b; /* Gris */
+}
+
+.steps-indicator .step-inactive strong {
+    background-color: #d8d9db; /* Círculo gris */
+    color: #2d333f;
+}
+
+/* --- Fila de Campos del Formulario --- */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas iguales */
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Grupos de Inputs (Icono + Campo) --- */
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d8d9db;
+    border-radius: 4px;
+    padding-left: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group:focus-within {
+    border-color: #007bff; /* Resaltado azul al enfocar */
+    box-shadow: 0 0 0 1px #007bff;
+}
+
+.input-group svg {
+    color: #2d333f;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    height: 44px; /* Altura estándar */
+    border: none;
+    outline: none;
+    background: none;
+    padding: 8px 10px 8px 0;
+    font-size: 1rem;
+    color: #2d333f;
+    appearance: none; /* Quita estilos nativos */
+}
+
+/* Flecha personalizada para el select */
+.input-group select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1.2em;
+    padding-right: 30px; /* Espacio para la flecha */
+    cursor: pointer;
+}
+
+.input-group input::placeholder {
+    color: #6f737b;
+}
+
+/* --- Contenedor de Mesas (Botones Rojos) --- */
+#contenedor-mesas-disponibles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para los placeholders y errores */
+.mesas-placeholder,
+.mesas-error {
+    color: #6f737b;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+.mesas-error {
+    color: #da3743;
+    font-weight: 600;
+}
+
+/* Estilo para los botones de mesa (como los de horario de la foto) */
+.btn-mesa-disponible {
+    background-color: #da3743;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-mesa-disponible:hover {
+    background-color: #b52d37; /* Rojo más oscuro */
+}
+
+/* Estilo del botón de mesa seleccionado */
+.btn-mesa-disponible.selected {
+    background-color: #2d333f; /* Color oscuro al seleccionar */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2d333f;
+    outline: none;
+}
+
+/* --- Botón Principal de Reserva --- */
+.btn-buscar-mesa {
+    width: 100%;
+    background-color: #da3743;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-buscar-mesa:hover:not(:disabled) {
+    background-color: #b52d37;
+}
+
+/* Estilo cuando está deshabilitado */
+.btn-buscar-mesa:disabled {
+    background-color: #d8d9db;
+    color: #6f737b;
+    cursor: not-allowed;
+}
+
+
+/* --- Clase de accesibilidad --- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* --- Responsividad --- */
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr; /* Los inputs se apilan verticalmente */
+    }
+    
+    .reserva-container-modern {
+        padding: 16px;
+    }
+
+    .reserva-container-modern h2 {
+        font-size: 1.5rem;
+    }
+}

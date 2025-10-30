@@ -3,7 +3,7 @@
         <h1>Descubre Nuestro Menú</h1>
         <p>Deliciosas opciones para todos los gustos</p>
     </div>
-    <div class="conten-cards-banner animate-fade-in">
+    <!-- <div class="conten-cards-banner animate-fade-in">
         <div class="card-menu-banner animate-fade-in">
             <div class="conten-img-card-banner">
                 <img src="./views/assets/img/americano.jpg" alt="Desayunos">
@@ -25,7 +25,7 @@
             <h3>Postres</h3>
             <p>Endulza tu día con nuestra variedad de postres frescos y caseros.</p>
         </div>
-    </div>
+    </div> -->
     <a class="btn-vermenu animate-fade-in" href="index.php?controller=menu&action=menu#section-menu" class="btn-menu animate-fade-in">Ver Menú</a>
     <span class="flecha-abajo animate-fade-in"><i class="fa-solid fa-chevron-down"></i></span>
 </section>
@@ -51,7 +51,7 @@
     <div id="menu-lista" class="menu-lista">
         <?php foreach ($menus as $menu): ?>
             <div class="menu-item">
-                <img src="<?= htmlspecialchars($menu['ImagenURL']) ?>" alt="<?= htmlspecialchars($menu['Nombre']) ?>">
+                <img src="DashboardAdmin/views/<?= htmlspecialchars($menu['ImagenURL']) ?>" alt="<?= htmlspecialchars($menu['Nombre']) ?>">
                 <h3><?= htmlspecialchars($menu['Nombre']) ?></h3>
                 <p><?= htmlspecialchars($menu['Descripcion']) ?></p>
                 <span class="precio">$<?= number_format($menu['Precio'], 2) ?></span>
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const card = document.createElement('div');
                     card.classList.add('menu-item');
                     card.innerHTML = `
-                        <img src="${item.ImagenURL}" alt="${item.Nombre}">
+                        <img src="DashboardAdmin/views/${item.ImagenURL}" alt="${item.Nombre}">
                         <h3>${item.Nombre}</h3>
                         <p>${item.Descripcion}</p>
                         <span class="precio">$${parseFloat(item.Precio).toFixed(2)}</span>

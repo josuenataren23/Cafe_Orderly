@@ -56,3 +56,45 @@
     <p class="p">¿Ya tienes una cuenta? <a class="span" href="?controller=Auth&action=login">Inicia sesión</a></p>
   </form>
 </div>
+
+
+<script>
+  // Paso 4: La función JavaScript que maneja la respuesta de Google
+        function onSignIn(googleUser) {
+            // Obtener el perfil básico del usuario
+            var profile = googleUser.getBasicProfile();
+            
+            // -------------------------------------------------------------------
+            // PARTE CRÍTICA: Obtener el Token ID
+            // Este token es el que debes enviar a tu servidor (backend) para verificación
+            var id_token = googleUser.getAuthResponse().id_token;
+            // -------------------------------------------------------------------
+
+            document.getElementById('status').innerText = '¡Inicio de sesión exitoso!';
+            document.getElementById('user-info').innerHTML = 
+                '<p>Nombre: ' + profile.getName() + '</p>' +
+                '<p>Email: ' + profile.getEmail() + '</p>' +
+                // Opcional: Mostrar el token (¡NUNCA LO EXPONGAS EN PRODUCCIÓN!)
+                '<p>Token ID (para el servidor): ' + id_token.substring(0, 30) + '...</p>';
+            
+            // *** PASO CLAVE: Enviar el 'id_token' a tu servidor para validarlo ***
+            enviarTokenAServidor(id_token);
+        }
+        
+        // Función para cerrar la sesión
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('Usuario cerró sesión.');
+                document.getElementById('status').innerText = 'Sesión cerrada.';
+                document.getElementById('user-info').innerHTML = '';
+            });
+        }
+
+        // Función simulada para enviar el token a tu servidor (backend)
+        function enviarTokenAServidor(token) {
+            console.log("Enviando token al servidor para verificación...");
+            // Aquí iría el código AJAX (fetch o XHR) para enviar el token 
+            // a un script en tu backend (ej: login.php, /auth/google)
+        }
+</script>
